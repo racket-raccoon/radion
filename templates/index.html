@@ -38,11 +38,11 @@
 <body class="hack dark main container">
   {% block content %}
   {% block header %}
-  {% if config.extra.after_dark_menu %}
+  {% if config.extra.radion_menu %}
   <header class="nav-header">
     <nav itemscope itemtype="http://schema.org/SiteNavigationElement" class="navbar">
       <div class="nav-links">
-        {% for item in config.extra.after_dark_menu %}
+        {% for item in config.extra.radion_menu %}
         <a itemprop="url"
           class="{% if item.url | replace(from='$BASE_URL', to=config.base_url)==current_url %}active{% endif %}"
           href="{{ item.url | safe | replace(from='$BASE_URL', to=config.base_url) | safe }}">
@@ -68,9 +68,9 @@
   {% endblock header %}
 
   <main>
-    {% if config.extra.after_dark_title %}
+    {% if config.extra.radion_title %}
     <header>
-      <h1>{{ config.extra.after_dark_title }}</h1>
+      <h1>{{ config.extra.radion_title }}</h1>
     </header>
     {% endif %}
     {% for page in paginator.pages %}

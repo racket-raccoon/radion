@@ -1,4 +1,4 @@
-# after-after-dark
+# radion
 
 Enhancements to the [`after-dark`](https://github.com/getzola/after-dark) Zola
 theme originally developmed by Vincent Prouillet.
@@ -10,7 +10,7 @@ Demo: https://micahkepe.com/blog/
 Lots of inspiration and code snippets taken from [`redux`](https://github.com/SeniorMars/redux)
 by [SeniorMars](https://github.com/SeniorMars). Go check out his theme and blog!
 
-![after-dark screenshot](screenshot.png)
+![radion theme screenshot](screenshot.png)
 
 ## Features
 
@@ -36,13 +36,13 @@ First download this theme to your `themes` directory:
 
 ```bash
 cd themes
-git clone https://github.com/micahkepe/after-after-dark
+git clone https://github.com/micahkepe/radion
 ```
 
 and then enable it in your `config.toml`:
 
 ```toml
-theme = "after-after-dark"
+theme = "radion"
 ```
 
 This theme requires your index section (`content/_index.md`) to be paginated to work:
@@ -53,7 +53,8 @@ paginate_by = 5
 
 The posts should therefore be in directly under the `content` folder.
 
-The theme requires tags and categories taxonomies to be enabled in your `config.toml`:
+The theme requires tags and categories taxonomies to be enabled in your
+`config.toml`:
 
 ```toml
 taxonomies = [
@@ -63,17 +64,17 @@ taxonomies = [
 ]
 ```
 
-If you want to paginate taxonomies pages, you will need to overwrite the templates
-as it only works for non-paginated taxonomies by default.
+If you want to paginate taxonomies pages, you will need to overwrite the
+templates as it only works for non-paginated taxonomies by default.
 
 ## Options
 
 ### Top-menu
 
-Set a field in `extra` with a key of `after_dark_menu`:
+Set a field in `extra` with a key of `radion_menu`:
 
 ```toml
-after_dark_menu = [
+radion_menu = [
     {url = "$BASE_URL", name = "Home"},
     {url = "$BASE_URL/categories", name = "Categories"},
     {url = "$BASE_URL/tags", name = "Tags"},
@@ -86,9 +87,9 @@ site URL.
 
 ### Title
 
-The site title is shown on the homepage. As it might be different from the `<title>`
-element that the `title` field in the config represents, you can set the `after_dark_title`
-instead.
+The site title is shown on the homepage. As it might be different from the
+`<title>` element that the `title` field in the config represents, you can set
+the `radion_title` instead.
 
 ### Author
 
@@ -142,7 +143,8 @@ latex = true
 
 ### Searchbar
 
-To enable a searchbar at the top of the page navigation, set the following in your `config.toml`:
+To enable a searchbar at the top of the page navigation, set the following in
+your `config.toml`:
 
 ```toml
 build_search_index = true

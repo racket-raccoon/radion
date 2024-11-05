@@ -1,7 +1,7 @@
-name = "after-after-dark"
-description = "A robuster, eleganter dark theme"
+name = "radion"
+description = "A elegant dark theme for Zola"
 license = "MIT"
-homepage = "https://github.com/micahkepe/after-after-dark"
+homepage = "https://github.com/micahkepe/radion"
 # The minimum version of Zola required
 min_version = "0.4.0"
 # An optional live demo URL

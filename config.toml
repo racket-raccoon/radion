@@ -1,7 +1,7 @@
-base_url = "https://getzola.github.io/after-dark"
+base_url = "https://github.com/micahkepe/radion"
 compile_sass = true
-title = "after-after-dark theme"
-description = "A robuster, eleganter dark theme"
+title = "radion theme"
+description = "A elegant dark theme for Zola"
 generate_feed = true
 
 taxonomies = [
@@ -25,12 +25,12 @@ index_format = "elasticlunr_json"
 
 [extra]
 author = "John Doe"
-after_dark_menu = [
+radion_menu = [
     {url = "$BASE_URL", name = "Home"},
     {url = "$BASE_URL/categories", name = "Categories"},
     {url = "$BASE_URL/tags", name = "Tags"},
 ]
-after_dark_title = "My Example Site"
+radion_title = "My Example Site"
 
 # Nicer codeblocks with copy to clipboard 
 codeblock = true
