@@ -11,7 +11,7 @@ Demo: https://micahkepe.com/blog/
 
 - [x] Code Snippet Clipboards
 - [x] Latex Support
-- [ ] Light/Dark mode support
+- [x] Light/Dark mode support
 - [x] Search functionality
 
 ## Contents

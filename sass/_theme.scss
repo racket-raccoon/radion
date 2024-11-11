@@ -18,8 +18,12 @@ third-party plugins and libraries.
   }
 }
 
-.muted {
+.dark .muted {
   color: rgba(255, 255, 255, 0.5);
+}
+
+.light .muted {
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .responsive-iframe {
@@ -94,8 +98,13 @@ nav a.active {
   color: #fff;
 }
 
-a[itemprop="url"] {
+.dark a[itemprop="url"] {
   color: #ff9800;
+}
+
+.light a[itemprop="url"] {
+  color: #ff9800;
+  font-weight: bold;
 }
 
 a[itemprop="url"]:hover {
