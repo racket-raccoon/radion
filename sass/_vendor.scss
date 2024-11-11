@@ -57,6 +57,10 @@ a {
   border-bottom: 1px solid #ff2e88
 }
 
+.light a {
+  background-color: rgba($color: #ebece9, $alpha: 0.4)
+}
+
 a:hover {
   background-color: #ff2e88;
   color: #fff
