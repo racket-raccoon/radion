@@ -50,27 +50,24 @@ function toggleTheme() {
  * @returns {void}
  */
 function updateItemToggleTheme() {
-  let mode = getSavedTheme();
-
-  const darkModeStyle = document.getElementById("darkModeStyle");
-  if (darkModeStyle) {
-    darkModeStyle.disabled = mode === "light";
-  }
-
+  const mode = getSavedTheme();
   const sunIcon = document.getElementById("sun-icon");
   const moonIcon = document.getElementById("moon-icon");
+
+  document.documentElement.classList.remove("light", "dark");
+  document.body.classList.remove("light", "dark");
+
+  if (mode === "dark") {
+    document.documentElement.classList.add("dark");
+    document.body.classList.add("dark");
+  } else {
+    document.documentElement.classList.add("light");
+    document.body.classList.add("light");
+  }
+
   if (sunIcon && moonIcon) {
     sunIcon.style.display = mode === "dark" ? "inline-block" : "none";
     moonIcon.style.display = mode === "light" ? "inline-block" : "none";
-  }
-
-  let htmlElement = document.querySelector("html");
-  if (mode === "dark") {
-    htmlElement.classList.remove("light");
-    htmlElement.classList.add("dark");
-  } else if (mode === "light") {
-    htmlElement.classList.remove("dark");
-    htmlElement.classList.add("light");
   }
 }
 

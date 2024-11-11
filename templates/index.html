@@ -71,18 +71,6 @@
     {% endif %}
 
     {% set theme = config.extra.theme | default(value="toggle") %}
-    {% if theme == "dark" %}
-        <link rel="stylesheet" type="text/css" href="{{ get_url(path='themes/dark.css') }}" />
-    {% elif theme == "light" %}
-        <link rel="stylesheet" type="text/css" href={{ get_url(path="themes/light.css") }} />
-    {% elif theme == "auto" %}
-        <link rel="stylesheet" type="text/css" href={{ get_url(path="themes/light.css") }} />
-        <link rel="stylesheet" type="text/css" href="{{ get_url(path='themes/dark.css') }}" media="(prefers-color-scheme: dark)" />
-    {% elif theme == "toggle" %}
-        <link rel="stylesheet" type="text/css" href={{ get_url(path="themes/light.css") }} />
-        <link id="darkModeStyle" rel="stylesheet" type="text/css" href="{{ get_url(path='themes/dark.css') }}" />
-    {% endif %}
-
     <!-- Set the correct theme in the script -->
     <script src={{ get_url(path="js/toggle-theme.js") }}></script>
     {% if theme == "dark" %}
