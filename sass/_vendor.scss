@@ -295,7 +295,17 @@ a:hover {
 .hack h4:before,
 .hack h5:before,
 .hack h6:before {
-  display: inline
+  display: inline;
+  color: #ff2e88;
+}
+
+.light .hack h2:before,
+.hack h3:before,
+.hack h4:before,
+.hack h5:before,
+.hack h6:before {
+  display: inline;
+  color: #d64a48;
 }
 
 .hack h2:before {
@@ -379,12 +389,6 @@ a:hover {
 
 .light .hack code {
   background: rgba($color: #000000, $alpha: 0.1);
-
-  // remove ticks 
-  &:before,
-  &:after {
-    content: none;
-  }
 }
 
 .dark blockquote {
@@ -424,13 +428,12 @@ a:hover {
 }
 
 .hack code {
-  font-weight: 700
-}
+  font-weight: 700;
 
-.hack code:after,
-.hack code:before {
-  content: "`";
-  display: inline
+  &:before,
+  &:after {
+    content: none;
+  }
 }
 
 .hack hr {

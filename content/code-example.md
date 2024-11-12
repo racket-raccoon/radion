@@ -29,6 +29,7 @@ def main():
 ```
 
 This is another code block with syntax highlighting. It's pretty cool, right?
+You can also have inline code like this: `var example = true`.
 
 <!-- prettier-ignore-->
 ```js

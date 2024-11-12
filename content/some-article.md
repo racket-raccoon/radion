@@ -31,6 +31,8 @@ Maecenas ac libero elit.
 >
 > > Nested blockquote example here.
 
+# H1 Header Example
+
 Sed vulputate tristique elit, eget pharetra elit sodales sed. Proin dignissim
 ipsum lorem, at porta eros malesuada sed. Proin tristique eros eu quam ornare,
 suscipit luctus mauris lobortis. Phasellus ut placerat enim. Donec egestas
@@ -41,6 +43,8 @@ feugiat varius. Mauris nec nulla viverra nisi porttitor efficitur. Morbi vel
 purus eleifend, finibus erat non, placerat ipsum. Mauris et augue vel nisi
 volutpat aliquam. Curabitur malesuada tortor est, at condimentum neque eleifend
 in.
+
+## H2 Header Example
 
 Morbi id ornare lacus. Suspendisse ultrices rutrum posuere. Nullam porttitor
 libero quis ligula finibus semper. Mauris iaculis magna et nisl tristique, eget
