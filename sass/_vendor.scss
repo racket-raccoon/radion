@@ -57,13 +57,13 @@ a {
   border-bottom: 1px solid #ff2e88
 }
 
-.light a {
-  background-color: rgba($color: #ebece9, $alpha: 0.4)
-}
-
 a:hover {
   background-color: #ff2e88;
   color: #fff
+}
+
+.light a {
+  font-weight: bold;
 }
 
 .grid {
@@ -374,7 +374,16 @@ a:hover {
   code {
     background: var(--bg-primary);
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  }
+}
 
+.light .hack code {
+  background: rgba($color: #000000, $alpha: 0.1);
+
+  // remove ticks 
+  &:before,
+  &:after {
+    content: none;
   }
 }
 
@@ -386,6 +395,14 @@ a:hover {
 .light blockquote {
   background-color: #E8E6ED;
   color: #5E667F;
+
+  a {
+    color: #5E667F;
+  }
+
+  code {
+    background: #E8E6ED;
+  }
 }
 
 .hack blockquote:after {
