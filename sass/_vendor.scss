@@ -364,6 +364,19 @@ a:hover {
     border-radius: 0.2em;
   }
 
+  em {
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: #d64a48;
+
+    &:before,
+    &:after {
+      content: none;
+    }
+  }
+
+
   a {
     color: #FFE4EE;
     font-weight: normal;
