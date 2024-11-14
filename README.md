@@ -10,6 +10,7 @@ Demo: https://micahkepe.com/blog/
 ## Features
 
 - [x] Code Snippet Clipboards
+  - [ ] Line(s)-specific highlighting   
 - [x] Latex Support
 - [x] Light/Dark mode support
 - [x] Search functionality
