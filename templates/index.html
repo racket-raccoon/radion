@@ -63,19 +63,42 @@
       {% endif %}
 
       {% if config.extra.theme | default(value="toggle") == "toggle" %}
-      <a id="dark-mode-toggle" onclick="toggleTheme(); event.preventDefault();" href="#">
+      <a 
+        id="dark-mode-toggle" 
+        onclick="toggleTheme(); event.preventDefault();" 
+        href="#"
+      >
         <img src={{ get_url(path="feather/sun.svg") }} id="sun-icon" style="filter: invert(1);" alt="Light mode" />
         <img src={{ get_url(path="feather/moon.svg") }} id="moon-icon" alt="Dark mode" />
       </a>
       {% endif %}
 
       {% if config.generate_feed %}
-      <a href="{{ get_url(path=config.feed_filename) | safe }}" class="feed-icon">
+      <a 
+        href="{{ get_url(path=config.feed_filename) | safe }}" 
+        class="feed-icon"
+        rel="noopener noreferrer"
+      >
         <img
             src="{{ get_url(path='icons/rss.svg') }}"
             id="rss-icon"
             alt="RSS feed"
-            class="rss-icon"
+            class="social-icon"
+        />
+      </a>
+      {% endif %}
+
+      {% if config.extra.github %}
+      <a 
+        href="{{ config.extra.github }}" 
+        class="feed-icon"
+        rel="noopener noreferrer"
+      >
+        <img
+            src="{{ get_url(path='icons/github.svg') }}"
+            id="github-icon"
+            alt="GitHub"
+            class="social-icon"
         />
       </a>
       {% endif %}

@@ -120,7 +120,7 @@ a[rel*="external"] {
 /* Style for all icons in the container */
 #sun-icon,
 #moon-icon,
-.rss-icon {
+.social-icon {
   padding: 0.1em;
   height: 1.5em;
   width: auto;
@@ -135,7 +135,7 @@ a[rel*="external"] {
 }
 
 /* Dark mode styles */
-body.dark .rss-icon {
+body.dark .social-icon {
   filter: invert(1);
 }
 

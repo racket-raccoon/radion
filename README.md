@@ -5,12 +5,16 @@ theme originally developmed by Vincent Prouillet.
 
 Demo: https://micahkepe.com/blog/
 
-![radion theme screenshot](screenshot.png)
+![radion dark theme screenshot](screenshot.png)
+
+<br>
+
+![radion light theme screenshot](screenshot-light.png)
 
 ## Features
 
 - [x] Code Snippet Clipboards
-  - [ ] Line(s)-specific highlighting   
+  - [ ] Line(s)-specific highlighting
 - [x] Latex Support
 - [x] Light/Dark mode support
 - [x] Search functionality
@@ -23,6 +27,7 @@ Demo: https://micahkepe.com/blog/
   - [Top menu](#top-menu)
   - [Title](#title)
   - [Author](#author)
+  - [GitHub](#github)
   - [Code Snippets](#code-snippets)
   - [LaTex Support](#latex-support)
   - [Searchbar](#searchbar)
@@ -109,6 +114,16 @@ date = 1970-01-01
 
 [extra]
 author = "John Smith"
+```
+
+### GitHub
+
+To enable a GitHub reference link in the header, set the following in your
+`config.toml`:
+
+```toml
+[extra]
+github = "https://github.com/your-github-link"
 ```
 
 ### Code Snippets
