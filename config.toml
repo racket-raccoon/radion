@@ -44,6 +44,3 @@ enable_search = true
 
 # Light/Dark Mode set 
 theme = "toggle" # options: {light, dark, auto, toggle}
-
-# Table of Contents 
-toc = true

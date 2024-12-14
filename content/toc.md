@@ -1,6 +1,8 @@
 +++
 title = "Table of Contents Test"
 date = 2024-12-08
+
+[extra]
 toc = true
 +++
 
