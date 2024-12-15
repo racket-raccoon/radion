@@ -3,7 +3,6 @@
   padding: 1rem;
   border: 1px solid #ddd;
   border-radius: 8px;
-  font-family: 'JetBrains Mono', monospace;
 }
 
 .light .toc-container {
@@ -27,7 +26,6 @@
 }
 
 .toc-list {
-  list-style-type: disc;
   margin-left: 1.5rem;
   padding: 0;
   color: #ccc;
@@ -35,14 +33,12 @@
 }
 
 .toc-list ul {
-  list-style-type: circle;
   margin-left: 1.5rem;
   color: #ccc;
   font-weight: bold;
 }
 
 .toc-list ul ul {
-  list-style-type: square;
   margin-left: 1.5rem;
   color: #ccc;
   font-weight: bold;
