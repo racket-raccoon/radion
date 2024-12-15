@@ -11,7 +11,7 @@ headings, lists, and more.
 
 ## Markdown Text Formatting Options
 
-**Some bold text**: _Italic text_. **_Bold and italic text_**.
+**Some bold text**. _Italic text_. **_Bold and italic text_**.
 ~~Strikethrough text~~.
 
 ## Collapsible Sections
