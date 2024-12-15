@@ -32,16 +32,28 @@
   font-weight: bold;
 }
 
+.light .toc-list {
+  color: #444;
+}
+
 .toc-list ul {
   margin-left: 1.5rem;
   color: #ccc;
   font-weight: bold;
 }
 
+.light .toc-list ul {
+  color: #444;
+}
+
 .toc-list ul ul {
   margin-left: 1.5rem;
   color: #ccc;
   font-weight: bold;
+}
+
+.light .toc-list ul ul {
+  color: #444;
 }
 
 .toc-list li {
