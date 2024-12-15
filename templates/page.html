@@ -19,9 +19,52 @@
         <h1 itemprop="headline">{{ page.title }}</h1>
         <span class="muted">{{ post_macros::meta(page=page) }}</span>
     </header>
+    
     <div itemprop="articleBody">
-      {{ page.content | safe }}
+        {% if page.summary != page.content %}
+            {{ page.summary | safe }}
+            
+            {% if page.extra.toc | default(value=false) and page.toc %}
+                <details class="toc-container">
+                    <summary class="toc-title">Table of Contents</summary>
+                    <ul class="toc-list">
+                        {% for h1 in page.toc %}
+                            <li>
+                                <a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
+                                {% if h1.children %}
+                                    <ul>
+                                        {% for h2 in h1.children %}
+                                            <li>
+                                                <a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
+                                            </li>
+                                            {% if h2.children %}
+                                                <ul>
+                                                    {% for h3 in h2.children %}
+                                                        <li>
+                                                            <a href="{{ h3.permalink | safe }}">{{ h3.title }}</a>
+                                                        </li>
+                                                    {% endfor %}
+                                                </ul>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </ul>
+                                {% endif %}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </details>
+            {% endif %}
+            
+            <!-- Render the rest of the content after removing the summary portion -->
+            {{ page.content | replace(from=page.summary, to="") | safe }}
+
+
+        {% else %}
+            <!-- If no summary separate from content, just render content -->
+            {{ page.content | safe }}
+        {% endif %}
     </div>
+
 
     {% block page_footer %}
         <footer>

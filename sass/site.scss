@@ -1,8 +1,10 @@
 @use "vendor";
 @use "theme";
+@import "fonts";
 @import "parts/note";
 @import "parts/code";
 @import "parts/search";
+@import "parts/toc";
 
 :root {
   --note-color: #00c6ff;

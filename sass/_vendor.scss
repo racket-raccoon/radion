@@ -13,7 +13,7 @@ body {
   line-height: 1.5rem;
   margin: 0;
   font-family:
-    Menlo, Monaco, Lucida Console, Liberation Mono,
+    'JetBrains Mono', Menlo, Monaco, Lucida Console, Liberation Mono,
     DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New,
     monospace, serif;
   word-wrap: break-word
@@ -218,8 +218,18 @@ a:hover {
   font-size: 1rem;
   font-style: normal;
   font-family:
-    Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    'JetBrains Mono', Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace, serif
+}
+
+.hack em {
+  font-style: italic
+}
+
+.hack strong em,
+.hack em strong {
+  font-style: italic;
+  font-weight: bold;
 }
 
 .hack blockquote,
@@ -423,7 +433,7 @@ a:hover {
 
 .hack em:after,
 .hack em:before {
-  content: "*";
+  content: none;
   display: inline
 }
 

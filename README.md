@@ -32,6 +32,7 @@ Demo: https://micahkepe.com/blog/
   - [LaTex Support](#latex-support)
   - [Searchbar](#searchbar)
   - [Light and Dark Modes](#light-and-dark-modes)
+  - [Table of Contents](#table-of-contents)
 - [Acknowledgements](#acknowledgements)
 
 ## Installation
@@ -186,6 +187,16 @@ There are four options for the `theme` field:
 - `auto`: Automatically switch between light and dark mode based on the user's
   system preferences
 - `toggle`: Allow the user to toggle between light and dark mode
+
+### Table of Contents
+
+To enable a table of contents on a page, add the following to the front matter
+of the page:
+
+```toml
+[extra]
+toc = true
+```
 
 ## Acknowledgements
 
