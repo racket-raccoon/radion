@@ -18,7 +18,7 @@ Demo: https://micahkepe.com/blog/
 - [x] Latex Support
 - [x] Light/Dark mode support
 - [x] Search functionality
-- [ ] Table of Contents shortcode
+- [x] Table of Contents option
 
 ## Contents
 
