@@ -1,17 +1,18 @@
 # radion
 
-A fork of the [`after-dark`](https://github.com/getzola/after-dark) Zola
-theme, originally developmed by Vincent Prouillet.
+A sleek, modern blog theme for [Zola](https://www.getzola.org/). See the live 
+site demo [here](https://micahkepe.com/radion/).
 
-Demo: https://micahkepe.com/radion
+> **radion** 
+> noun 
+> 1. (*physics*) A scalar field in higher-dimensional spacetimes
+>
 
 <details open>
 <summary>Dark theme</summary>
 
 ![radion dark theme screenshot](screenshot.png)
 </details>
-
-<br>
 
 <details>
 <summary>Light theme</summary>
@@ -28,7 +29,7 @@ Demo: https://micahkepe.com/radion
 - [x] Search functionality
 - [x] Table of Contents option
 
-## Contents
+## Contents and Configuration Guide
 
 - [Installation](#installation)
 - [Options](#options)

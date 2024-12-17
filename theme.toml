@@ -1,11 +1,9 @@
 name = "radion"
-description = "A elegant dark theme for Zola"
+description = "A sleek, modern blog theme."
 license = "MIT"
 homepage = "https://github.com/micahkepe/radion"
-# The minimum version of Zola required
 min_version = "0.4.0"
-# An optional live demo URL
-demo = "https://micahkepe.com/blog/"
+demo = "https://micahkepe.com/radion/"
 
 # Any variable that can be overridden in the end user `config.toml`
 # You don't need to prefix variables by the theme name but as this will
