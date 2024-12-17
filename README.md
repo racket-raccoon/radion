@@ -1,7 +1,7 @@
 # radion
 
-Enhancements to the [`after-dark`](https://github.com/getzola/after-dark) Zola
-theme originally developmed by Vincent Prouillet.
+A fork of the [`after-dark`](https://github.com/getzola/after-dark) Zola
+theme, originally developmed by Vincent Prouillet.
 
 Demo: https://micahkepe.com/blog/
 
@@ -14,7 +14,7 @@ Demo: https://micahkepe.com/blog/
 ## Features
 
 - [x] Code Snippet Clipboards
-  - [ ] Line(s)-specific highlighting
+  - [x] Line(s)-specific highlighting
 - [x] Latex Support
 - [x] Light/Dark mode support
 - [x] Search functionality

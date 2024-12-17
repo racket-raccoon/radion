@@ -566,13 +566,56 @@ table th {
   padding: 10px
 }
 
-table thead th {
-  font-size: 10px
+table thead {
+  font-style: bold;
 }
+
+.light table thead {
+  background-color: #E8E6ED;
+}
+
+.dark table thead {
+  background-color: #232224;
+}
+
+code table {
+  margin: 1rem 0 0;
+  border: none;
+
+  td,
+  tr {
+    border: none;
+  }
+}
+
 
 table tbody td:first-child {
   font-weight: 700;
   color: #333
+}
+
+del {
+  text-decoration-color: #d64a48;
+  text-decoration-thickness: 3px;
+}
+
+details {
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+
+  summary::marker {
+    color: #d64a48;
+  }
+}
+
+.dark details {
+  background-color: #1a1a1a;
+}
+
+.light details {
+  background-color: #efefef;
 }
 
 .form {
@@ -1071,17 +1114,23 @@ select.form-control {
   color: #fff
 }
 
-.dark code {
-  font-weight: 100
+.dark table {
+  color: #fff;
 }
 
-.dark table {
-  color: #ccc
+.light table {
+  color: #000;
 }
 
 .dark table td,
 .dark table th {
-  border-color: #444
+  border-color: #fff;
+}
+
+.light table td,
+.light table th {
+  color: #000;
+  border-color: #000;
 }
 
 .dark table tbody td:first-child {

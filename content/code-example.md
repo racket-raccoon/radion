@@ -16,11 +16,27 @@ on this article to see some code in action.
 ```rust
 
 fn main() {
-    println!("Hello, world!");
+    println!("Hello World");
 }
 ```
 
-This is a code block with syntax highlighting. It's pretty cool, right?
+Same snippet with line numbers:
+
+```rust,linenos
+fn main() {
+    println!("Hello World");
+}
+```
+
+Same snippet with line numbers and line highlighting:
+
+```rust,hl_lines=2,linenos
+fn main() {
+    println!("Hello World");
+}
+```
+
+Python example:
 
 ```python
 

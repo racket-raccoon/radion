@@ -1,6 +1,9 @@
 +++
 title = "Markdown Formatting Test"
 date = 2024-12-13
+
+[extra]
+toc = true
 +++
 
 This page demonstrates various Markdown formatting features that can be used in
@@ -12,7 +15,7 @@ headings, lists, and more.
 ## Markdown Text Formatting Options
 
 **Some bold text**. _Italic text_. **_Bold and italic text_**.
-~~Strikethrough text~~.
+~~Strikethrough text~~. `Inline code`.
 
 ## Collapsible Sections
 
@@ -55,10 +58,11 @@ This is an example of an H4 header.
 
 ## Tables
 
-| Column 1 | Column 2 | Column 3 |
+| Header 1 | Header 2 | Header 3 |
 | -------- | -------- | -------- |
 | Row 1    | Row 1    | Row 1    |
 | Row 2    | Row 2    | Row 2    |
+| Row 3    | Row 3    | Row 3    |
 
 ## Lists
 
