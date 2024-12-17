@@ -3,7 +3,7 @@
 A fork of the [`after-dark`](https://github.com/getzola/after-dark) Zola
 theme, originally developmed by Vincent Prouillet.
 
-Demo: https://micahkepe.com/blog/
+Demo: https://micahkepe.com/radion
 
 ![radion dark theme screenshot](screenshot.png)
 
