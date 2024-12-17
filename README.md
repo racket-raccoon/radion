@@ -5,11 +5,19 @@ theme, originally developmed by Vincent Prouillet.
 
 Demo: https://micahkepe.com/radion
 
+<details open>
+<summary>Dark theme</summary>
+
 ![radion dark theme screenshot](screenshot.png)
+</details>
 
 <br>
 
+<details>
+<summary>Light theme</summary>
+
 ![radion light theme screenshot](screenshot-light.png)
+</details>
 
 ## Features
 
