@@ -2,7 +2,7 @@ base_url = "https://micahkepe.com/radion"
 compile_sass = true
 title = "radion theme"
 description = "A elegant light and dark theme for Zola"
-generate_feed = true
+generate_feeds = true
 
 taxonomies = [
     {name = "categories", feed = true},
