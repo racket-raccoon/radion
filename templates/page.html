@@ -5,7 +5,7 @@
     {% if page.title %}
     {{ page.title }}
     {% else %}
-    {{ super() }} 
+    {{ super() }}
     {% endif %}
 {% endblock title %}
 
@@ -19,11 +19,11 @@
         <h1 itemprop="headline">{{ page.title }}</h1>
         <span class="muted">{{ post_macros::meta(page=page) }}</span>
     </header>
-    
+
     <div itemprop="articleBody">
-        {% if page.summary != page.content %}
+        {% if page.summary and page.summary != page.content %}
             {{ page.summary | safe }}
-            
+
             {% if page.extra.toc | default(value=false) and page.toc %}
                 <details class="toc-container">
                     <summary class="toc-title">Table of Contents</summary>
@@ -54,7 +54,7 @@
                     </ul>
                 </details>
             {% endif %}
-            
+
             <!-- Render the rest of the content after removing the summary portion -->
             {{ page.content | replace(from=page.summary, to="") | safe }}
 
