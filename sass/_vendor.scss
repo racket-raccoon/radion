@@ -278,13 +278,15 @@ a:hover {
   display: table-cell;
   padding: 20px 0 30px;
   margin: 0;
+  font-size: 1.7rem;
   overflow: hidden
 }
 
 .hack h1:after {
   content: "====================================================================================================";
   position: absolute;
-  bottom: 10px;
+  font-size: 1rem;
+  bottom: 0px;
   left: 0
 }
 
