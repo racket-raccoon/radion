@@ -37,6 +37,15 @@
   <body class="hack dark main container">
     {% block content %} {% block header %} {% if config.extra.radion_menu %}
     <header class="nav-header">
+
+        <a href="/" style="all: unset; cursor: pointer;">
+          <img
+            src="/images/avatar.png"
+            alt="Raccoon - Racket programming language mascot"
+            style="width: 60px; height: auto; border-radius: 50%;"
+          />
+        </a>
+<!--        
       <nav
         itemscope
         itemtype="http://schema.org/SiteNavigationElement"
@@ -54,6 +63,7 @@
           {% endfor %}
         </div>
       </nav>
+-->
       <div class="user-actions-container">
         {% if config.extra.enable_search %}
         <svg
@@ -105,11 +115,6 @@
             class="social-icon"
           />
         </a>
-        <img
-          src="/images/avatar.png"
-          alt="Raccoon - Racket programming language mascot"
-          style="width: 60px; height: auto; border-radius: 50%;"
-        />
         {% endif %} {% if config.extra.github %}
         <a
           href="{{ config.extra.github }}"
