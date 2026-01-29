@@ -4,6 +4,14 @@
 {% macro header(config) %}
   {% if config.extra.radion_menu %}
   <section class="nav-header">
+    <a href="/" style="all: unset; cursor: pointer;">
+      <img
+        src="/images/avatar.png"
+        alt="Raccoon - Racket programming language mascot"
+        style="width: 60px; height: auto; border-radius: 50%;"
+      />
+    </a>
+    <!--
     <nav
       itemscope
       itemtype="http://schema.org/SiteNavigationElement"
@@ -21,6 +29,7 @@
         {% endfor %}
       </section>
     </nav>
+    -->
     <aside class="user-actions-container">
       {% if config.extra.enable_search %}
       <section class="search-container">
