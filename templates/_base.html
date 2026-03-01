@@ -63,7 +63,8 @@
     {% endif %}
 
     <!-- Cover images -->
-    {% set cover_image = config.base_url ~ "/icons/favicon/web-app-manifest-512x512.png" %}
+    {% set cover_image_path = config.extra.cover_image_path | default(value="/images/avatar.png") %}
+    {% set cover_image = config.base_url ~ cover_image_path %}
     {% if page and page.extra.cover_image and page.assets %}
       {% for asset in page.assets %}
         {% if asset is ending_with(page.extra.cover_image) %}
@@ -83,33 +84,10 @@
       content="{{ cover_image }}"
     />
 
-    <!-- Favicons -->
+    <!-- Favicon -->
     {% if config.extra.favicon | default (value="true") %}
-    <link
-      rel="icon"
-      type="image/png"
-      href="{{ config.base_url }}/icons/favicon/favicon-96x96.png"
-      sizes="96x96"
-    />
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="{{ config.base_url }}/icons/favicon/favicon.svg"
-    />
-    <link
-      rel="shortcut icon"
-      href="{{ config.base_url }}/icons/favicon/favicon.ico"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="{{ config.base_url }}/icons/favicon/apple-touch-icon.png"
-    />
-    <meta name="apple-mobile-web-app-title" content="{{ title }}" />
-    <link
-      rel="manifest"
-      href="{{ config.base_url }}/icons/favicon/site.webmanifest"
-    />
+    {% set favicon_path = config.extra.favicon_path | default(value="/images/avatar.png") %}
+    <link rel="icon" type="image/png" href="{{ favicon_path }}" />
     {% endif %}
 
     <!-- RSS Feed -->
